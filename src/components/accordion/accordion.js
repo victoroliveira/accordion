@@ -25,9 +25,22 @@ customElements.define(
       });
     }
 
+    // In case to select other item, search for opened items
+    _collapseAll(current) {
+      this.dds.map(el => {
+        if (current !== el) {
+          el.removeAttribute('selected');
+          el.classList.remove('accordion__content--open');
+        }
+      });
+    }
+
     _toggle(evt) {
       const contentEl = evt.target.nextElementSibling;
+
+      this._collapseAll(contentEl);
       contentEl.classList.add('accordion__content--open');
+      contentEl.setAttribute('selected', '');
     }
   },
   { extends: 'dl' }
