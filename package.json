@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -22,14 +22,20 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@jest/transform": "^24.9.0",
     "@storybook/html": "^5.2.8",
+    "@types/jest": "^24.0.23",
     "@webcomponents/webcomponentsjs": "^2.4.0",
+    "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
+    "babel-plugin-transform-dynamic-import": "^2.1.0",
     "eslint": "^6.7.2",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.1",
+    "jest": "^24.9.0",
     "node-sass": "^4.13.0",
     "prettier": "1.19.1",
     "sass-loader": "^8.0.0"
