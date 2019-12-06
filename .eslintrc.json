@@ -22,6 +22,7 @@
         "prettier/prettier": ["error"],
         "semi": "off",
         "no-underscore-dangle": ["error", { "allowAfterThis": true }],
+        "class-methods-use-this": "off",
         "default-case": "off"
     }
 }
