@@ -6,11 +6,18 @@ export default class Accordion extends HTMLDListElement {
     this.dds = [...this.querySelectorAll('dd')];
   }
 
+  /**
+   * Function called when component is added into DOM and
+   * call styling function and creates onclick event for each title.
+   */
   connectedCallback() {
     this._styling();
     this.dts.map(el => el.addEventListener('click', this._toggle.bind(this)));
   }
 
+  /**
+   * Add respective classes for titles and contents.
+   */
   _styling() {
     this.classList.add('accordion');
 
@@ -23,7 +30,11 @@ export default class Accordion extends HTMLDListElement {
     });
   }
 
-  // In case to select other item, search for opened items
+  /**
+   * Remove selected attribute and accordion__content--open class
+   * to each fom element that is different from the selected one.
+   * @param {HTMLElement} current
+   */
   _collapseAll(current) {
     this.dds.map(el => {
       if (current !== el) {
@@ -33,6 +44,11 @@ export default class Accordion extends HTMLDListElement {
     });
   }
 
+  /**
+   * Toggle clicked element, setting nextElementSibling attribute as selected and
+   * content as open
+   * @param {object} evt
+   */
   _toggle(evt) {
     const contentEl = evt.target.nextElementSibling;
 

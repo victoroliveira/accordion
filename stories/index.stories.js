@@ -1,6 +1,8 @@
 import '../src/components/accordion/accordion';
 import { topHeadlinesUrl } from '../newsApi.js';
 
+// Fetch news and show as last accrdion item
+// TODO: Remove this code from stories
 const fetchNews = async () => {
   const res = await fetch(topHeadlinesUrl);
   const json = await res.json();
