@@ -2,6 +2,10 @@
 
 Accordion Web Component
 
+## Demo
+
+[Accordion demo](https://victoroliveira.github.io/accordion/?path=/story/demo--accordion)
+
 ## How to execute:
 
 Install: `npm install`
