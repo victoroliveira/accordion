@@ -7,7 +7,8 @@
     "test": "jest",
     "coverage": "jest --coverage",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "jest": {
     "transform": {
@@ -37,6 +38,7 @@
     "@jest/transform": "^24.9.0",
     "@jest/types": "^24.9.0",
     "@storybook/html": "^5.2.8",
+    "@storybook/storybook-deployer": "^2.8.1",
     "@types/jest": "^24.0.23",
     "@webcomponents/webcomponentsjs": "^2.4.0",
     "babel-jest": "^24.9.0",

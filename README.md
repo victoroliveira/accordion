@@ -25,3 +25,7 @@ Will open a browser tab with a component example.
 Run `npm run coverage` to execute coverage script.
 
 Open the file `coverage/lcov-report/index.html` in a browser to see the coverage UI.
+
+## Deploy
+
+[Accordion demo](https://victoroliveira.github.io/accordion/?path=/story/demo--accordion)
