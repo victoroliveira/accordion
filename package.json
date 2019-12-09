@@ -5,8 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "coverage": "jest --coverage",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(mjs|jsx|js)$": "babel-jest"
+    },
+    "setupFiles": [
+      "<rootDir>/node_modules/babel-polyfill/dist/polyfill.js",
+      "<rootDir>/node_modules/mutationobserver-shim/dist/mutationobserver.min.js",
+      "<rootDir>/node_modules/document-register-element/build/document-register-element.node.js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -34,12 +45,16 @@
     "babel-plugin-transform-es2015-destructuring": "^6.23.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "document-register-element": "^1.14.3",
     "eslint": "^6.7.2",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.1",
     "jest": "^24.9.0",
+    "jsdom": "^15.2.1",
+    "mutationobserver-shim": "^0.3.3",
     "node-sass": "^4.13.0",
     "prettier": "1.19.1",
     "sass-loader": "^8.0.0"
