@@ -55,7 +55,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.1",
     "jest": "^24.9.0",
-    "jsdom": "^15.2.1",
+    "jsdom": "^16.5.0",
     "mutationobserver-shim": "^0.3.3",
     "node-sass": "^4.13.0",
     "prettier": "1.19.1",
