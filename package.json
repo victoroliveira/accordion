@@ -37,7 +37,7 @@
     "@babel/preset-env": "^7.7.4",
     "@jest/transform": "^24.9.0",
     "@jest/types": "^24.9.0",
-    "@storybook/html": "^5.2.8",
+    "@storybook/html": "^7.0.9",
     "@storybook/storybook-deployer": "^2.8.1",
     "@types/jest": "^24.0.23",
     "@webcomponents/webcomponentsjs": "^2.4.0",
